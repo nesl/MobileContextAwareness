@@ -1,0 +1,1 @@
+INDEX VERSION 1.126+C:\Users\Xi Chen\Documents\Workspace\MobileContextAwareness\.metadata\.plugins\org.eclipse.jdt.core
