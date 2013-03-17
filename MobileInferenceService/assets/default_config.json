@@ -1,0 +1,8 @@
+{       "name": "TransModel",
+        "version":1,
+        "dataRequests":{
+	        "edu.mit.media.funf.probe.builtin.AccelerometerSensorProbe": [
+	            { "PERIOD": 1, "DURATION": 5000 }
+	        ]
+        }
+}

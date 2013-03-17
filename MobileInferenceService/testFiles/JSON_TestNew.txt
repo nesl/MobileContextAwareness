@@ -1,0 +1,92 @@
+{
+        "Name": "Determine Transportation Model Using Mobile Phone",
+		"Feature List" : [
+						{
+        					"ID": 1,
+							"Feature": "Variance",
+							"Sensor": "Acc",
+							"Component": "len",
+							"WindowSize": 2000
+						},
+						{
+        					"ID": 2,
+        					"Feature": "Energy Coefficient",
+                			"Parameters": { "Coef" : 5 },
+							"Sensor": "Acc",
+							"Component": "len",
+							"WindowSize": 2000
+						},
+                        {
+                            "ID": 3,
+                            "Sensor": "Acc",
+                            "Component": "x",
+							"SampleRate": 20
+                        },
+                        {
+                            "ID": 4,
+                            "Sensor": "Acc",
+                            "Component": "y",
+							"SampleRate": 20
+                        },
+                        {
+                            "ID": 5,
+                            "Sensor": "Acc",
+                            "Component": "z",
+							"SampleRate": 20
+                        }
+		],
+		"Model List" : [
+						{
+							"Name": "Transportation Model",
+							"Type": "TREE",
+                            "ResultType": "Set",
+							"ResultSet": ["still", "walk", "run", "bike", "driving"],
+							"Nodes": [
+									{
+										"ID": 1,
+										"FeatureID": 1,
+										"Operator": "<=",
+										"Value": 0.2233,
+										"ChildNode": [2, 3]
+									},
+									{
+										"ID": 2,
+										"FeatureID": 5,
+										"Operator": "<=",
+										"Value": 0.123,
+										"ChildNode": [4, 5]
+									},
+									{
+										"ID": 3,
+										"Result": "run"
+									},
+									{
+										"ID": 4,
+										"Result": "still"
+									},
+									{
+										"ID": 5,
+										"Result": "walk"
+									}
+							]
+						},
+                        {
+                            "Name": "Acc_x",
+                            "Type": "RAW",
+                            "ResultType": "Double",
+                            "FeatureID": 3
+                        },
+                        {
+                            "Name": "Acc_y",
+                            "Type": "RAW",
+                            "ResultType": "Double",
+                            "FeatureID": 4
+                        },
+                        {
+                            "Name": "Acc_z",
+                            "Type": "RAW",
+                            "ResultType": "Double",
+                            "FeatureID": 5
+                        }
+        ]
+}

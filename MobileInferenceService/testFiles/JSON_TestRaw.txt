@@ -1,0 +1,46 @@
+{
+        "Name": "Raw Test",
+        "Feature List" : [
+                        {
+                            "ID": 1,
+                            "Sensor": "Acc",
+                            "Component": "x",
+							"SampleRate": 20
+                        },
+                        {
+                            "ID": 2,
+                            "Sensor": "Acc",
+                            "Component": "y",
+							"SampleRate": 20
+                        },
+                        {
+                            "ID": 3,
+                            "Sensor": "Acc",
+                            "Component": "z",
+							"SampleRate": 20
+                        }
+        ],
+        "Model List" : [
+                        {
+                            "ID": 4,
+                            "Name": "Acc_x",
+                            "Type": "RAW",
+                            "ResultType": "Double",
+                            "FeatureID": 1
+                        },
+                        {
+                            "ID": 5,
+                            "Name": "Acc_y",
+                            "Type": "RAW",
+                            "ResultType": "Double",
+                            "FeatureID": 2
+                        },
+                        {
+                            "ID": 6,
+                            "Name": "Acc_z",
+                            "Type": "RAW",
+                            "ResultType": "Double",
+                            "FeatureID": 3
+                        }
+        ]
+}

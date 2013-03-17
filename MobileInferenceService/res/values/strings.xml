@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">MobileContextAwareness</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_control">MobileContextAwareness</string>
+    <string name="statusLabel">Status:</string>
+    <string name="status_stopped">Stopped</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_running">Running</string>
+    <string name="sensorCountLabel">Active Sensor Count:</string>
+    <string name="classifierRegCountLabel">Registered Claassifier Count:</string>
+    <string name="classifierCountLabel">Active Claassifier Count:</string>
+    <string name="featureCountLabel">Active Feature Count:</string>
+    <string name="rateLabel">Update Rate:</string>
+    <string name="unit_second">s</string>
+    <string name="change">Change</string>
+    <string name="action_start">Start</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_exit">Exit</string>
+    <string name="default_value">0</string>
+</resources>

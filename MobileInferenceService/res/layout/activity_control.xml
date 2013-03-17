@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtFeatureCountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtClassifierCountLabel"
+        android:layout_below="@+id/txtClassifierCount"
+        android:layout_marginTop="24dp"
+        android:text="@string/featureCountLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:context=".ControlActivity" />
+
+    <TextView
+        android:id="@+id/txtFeatureCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtFeatureCountLabel"
+        android:layout_alignBottom="@+id/txtFeatureCountLabel"
+        android:layout_alignRight="@+id/txtClassifierCount"
+        android:text="@string/default_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/statusLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:context=".ControlActivity" />
+
+    <TextView
+        android:id="@+id/txtSensorCountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtStatusLabel"
+        android:layout_below="@+id/txtStatus"
+        android:layout_marginTop="24dp"
+        android:text="@string/sensorCountLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:context=".ControlActivity" />
+
+    <TextView
+        android:id="@+id/txtSensorCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtSensorCountLabel"
+        android:layout_alignBottom="@+id/txtSensorCountLabel"
+        android:layout_alignRight="@+id/txtStatus"
+        android:text="@string/default_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtCLassifierRegCountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtSensorCountLabel"
+        android:layout_below="@+id/txtSensorCount"
+        android:layout_marginTop="24dp"
+        android:text="@string/classifierCountLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:context=".ControlActivity" />
+
+    <TextView
+        android:id="@+id/txtClassifierRegCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtCLassifierRegCountLabel"
+        android:layout_alignBottom="@+id/txtCLassifierRegCountLabel"
+        android:layout_alignRight="@+id/txtSensorCount"
+        android:text="@string/default_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtStatusLabel"
+        android:layout_alignBottom="@+id/txtStatusLabel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:text="@string/status_stopped"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtClassifierCountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtCLassifierRegCountLabel"
+        android:layout_below="@+id/txtClassifierRegCount"
+        android:layout_marginTop="24dp"
+        android:text="@string/classifierCountLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:context=".ControlActivity" />
+
+    <TextView
+        android:id="@+id/txtClassifierCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtClassifierCountLabel"
+        android:layout_alignRight="@+id/txtClassifierRegCount"
+        android:text="@string/default_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtRateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtFeatureCountLabel"
+        android:layout_below="@+id/txtFeatureCount"
+        android:layout_marginTop="24dp"
+        android:text="@string/rateLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtRateUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txtRateLabel"
+        android:layout_alignBottom="@id/txtRateLabel"
+        android:layout_alignRight="@+id/txtFeatureCount"
+        android:text="@string/unit_second"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtRateUnit"
+        android:layout_alignBottom="@+id/txtRateUnit"
+        android:layout_toLeftOf="@+id/txtRateUnit"
+        android:ems="4"
+        android:inputType="number|numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRateLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/action_start" />
+
+    <Button
+        android:id="@+id/btnChangeRate"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtRateLabel"
+        android:layout_alignBottom="@+id/txtRateLabel"
+        android:layout_toRightOf="@+id/txtRateLabel"
+        android:text="@string/change" />
+
+</RelativeLayout>
